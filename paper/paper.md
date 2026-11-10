@@ -78,7 +78,7 @@ The smoke test checks importability without credentials, market arithmetic, fall
 - The final leaderboard score is official, but the exact final source artifact is unresolved.
 - Local batteries are proxies whose opponent sets, seeds, and selection history are not equivalent to the official final evaluation.
 - The released source mirrors public environment constants and synchronizes against `kaggle-environments` by default, falling back to its built-in constants when the package is absent; it does not vendor the Kaggle engine.
-- `main.py` is the retained user-owned source snapshot, © 2026 Ryo Hasegawa. All rights reserved; this archive makes no new license grant. See [`THIRD_PARTY_NOTICES.md`](https://github.com/rhasegaw/kaggriculture-agent/blob/main/THIRD_PARTY_NOTICES.md).
+- `main.py` is the retained user-owned source snapshot, © 2026 Ryo Hasegawa. The original controller and documentation are licensed under [Apache-2.0](https://github.com/rhasegaw/kaggriculture-agent/blob/main/LICENSE). See [`THIRD_PARTY_NOTICES.md`](https://github.com/rhasegaw/kaggriculture-agent/blob/main/THIRD_PARTY_NOTICES.md).
 - This is a technical report prepared for archival and portfolio use, not peer-reviewed research.
 
 ## References

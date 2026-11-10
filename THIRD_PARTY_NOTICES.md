@@ -12,4 +12,4 @@ The game constants in `main.py` are documented as mirrors of the public Kaggle e
 
 ## Retained source provenance
 
-`main.py` is the retained user-owned source snapshot, © 2026 Ryo Hasegawa. All rights reserved; this archive makes no new license grant. This provenance statement is separate from the Apache-2.0 notice above; competition-specific publication and licensing decisions are handled outside this package.
+`main.py` is the retained user-owned source snapshot, © 2026 Ryo Hasegawa. The original controller and documentation are licensed under [Apache-2.0](LICENSE). The optional Kaggle runtime dependency remains governed by its separate upstream notice above.

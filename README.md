@@ -15,7 +15,7 @@ The companion portfolio page is [Kaggriculture](https://rhasegaw.github.io/work/
 - [`source_manifest.json`](https://github.com/rhasegaw/kaggriculture-agent/blob/main/source_manifest.json) — SHA-256 provenance for the retained source snapshot.
 - [`THIRD_PARTY_NOTICES.md`](https://github.com/rhasegaw/kaggriculture-agent/blob/main/THIRD_PARTY_NOTICES.md) — attribution and license boundaries for the optional Kaggle runtime dependency.
 
-`main.py` is the retained user-owned source snapshot, © 2026 Ryo Hasegawa. All rights reserved; this archive makes no new license grant. See `THIRD_PARTY_NOTICES.md` for the separate Kaggle dependency notice.
+`main.py` is the retained user-owned source snapshot, © 2026 Ryo Hasegawa. The original controller and documentation are licensed under [Apache-2.0](LICENSE). See `THIRD_PARTY_NOTICES.md` for the separate Kaggle dependency notice.
 
 ## Quick verification
 
