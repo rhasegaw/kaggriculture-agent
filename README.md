@@ -42,6 +42,8 @@ python3 -m pip install -r requirements.txt
 
 Then load `main.py` through the official Kaggle Environments API or the competition submission loader. Release validation used Python 3.11.15 and a four-step self-play loader smoke: both agents finished `DONE` with rewards `150.0` and `150.0`. This checks short-run loading, not a competition result. A separate first-decision check at step 0 returned `BUILD_PASTURE` plus hiring and purchase orders, with engine synchronization enabled and no stderr; it did not take the fallback path. A full 720-turn run is a separate evaluation exercise. The package intentionally excludes private replay tapes, oracle schedules, development logs, and research data; the corresponding experimental knobs are disabled by default in `main.py`.
 
+The [first-decision record](results/runtime_check.json) includes the returned action, runtime, and fallback comparison.
+
 ## Evidence boundary
 
 The official final leaderboard record is rank 76 of 10,148, score 4,856.5, Silver, submission 56719108. That result is verified through Kaggle’s leaderboard services. The exact source hash for submission 56719108 was not retained locally, so this package documents the retained planner lineage rather than claiming byte identity with the final hosted submission. See the report and results file for the distinction.

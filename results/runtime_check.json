@@ -1,0 +1,78 @@
+{
+  "captured_at_utc": "2026-11-10T03:24:04.073790+00:00",
+  "scope": "Bounded official-engine first-decision smoke; no competition experiment, optimization, tournament, or submission.",
+  "runtime": {
+    "python": "3.11.15",
+    "kaggle_environments": "1.32.7",
+    "episode_steps_configured": 4,
+    "seed": 1
+  },
+  "observation": {
+    "player": 0,
+    "step": 0,
+    "source": "official kaggle-environments make('kaggriculture') state observation"
+  },
+  "action_returned_by_main_agent": {
+    "farmer": [
+      "BUILD_PASTURE"
+    ],
+    "hands": [],
+    "market": [
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "BUY_ANIMAL",
+        "SHEEP",
+        3
+      ],
+      [
+        "BUY_ANIMAL",
+        "COW",
+        1
+      ],
+      [
+        "BUY_SEED",
+        "MELON",
+        11
+      ],
+      [
+        "BUY_SEED",
+        "WHEAT",
+        6
+      ],
+      [
+        "BUY_PRODUCT",
+        "WHEAT",
+        4
+      ]
+    ]
+  },
+  "fallback_comparison": {
+    "fallback_shape": {
+      "farmer": [
+        "PASS"
+      ],
+      "hands": [],
+      "market": []
+    },
+    "is_fallback_shape": false,
+    "engine_synced": true
+  },
+  "captured_stderr": "",
+  "interpretation": "This direct first-decision trace proves that the unchanged main.py produced a non-fallback planner action from an official engine observation. The earlier four-step DONE/reward smoke remains loader/short-run evidence; it is not by itself action-trace evidence.",
+  "checked_date_local": "2026-11-09",
+  "timezone": "America/Chicago"
+}

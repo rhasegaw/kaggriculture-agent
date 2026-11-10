@@ -31,7 +31,7 @@ The controller’s `World` representation is built from the current observation,
 
 ### 2.2 Production and labor planning
 
-The source encodes the competition’s crop, animal, shop, land, and clock constants (`main.py:38-87`). At a daily boundary it assigns field roles and updates production targets (`main.py:485-927`, `main.py:970-1004`). Each turn it derives jobs from actual plants, animals, seeds, shed stock, and structure needs (`main.py:1066-1407`). Jobs include watering, feeding, caring, collecting, harvesting, fertilizing, planting, building, digging, and carrying goods.
+The source encodes the competition’s crop, animal, shop, land, and clock constants (`main.py:38-87`). At a daily boundary it assigns field roles and updates production targets (`main.py:485-927`, `main.py:970-1004`). Each turn it derives jobs from actual plants, animals, seeds, shed stock, and structure needs (`main.py:1066-1406`). Jobs include watering, feeding, caring, collecting, harvesting, fertilizing, planting, building, digging, and carrying goods.
 
 Assignment is deliberately operational rather than purely economic. Priorities include production deadlines and animal/feed urgency, with walking distance and unit stickiness used to reduce avoidable travel (`main.py:1440-1563`, `main.py:1826-2091`). The final action path returns separate farmer, hand, and market-order lists (`main.py:4075-4128`). A defensive wrapper returns pass actions if an unexpected observation or optional engine import fails (`main.py:4207-4220`).
 
@@ -71,7 +71,7 @@ The package is intentionally small:
 2. Run `py -3 tests/smoke_test.py` or `python3 tests/smoke_test.py`.
 3. For optional engine evaluation, install `kaggle-environments==1.32.7` from `requirements.txt` on a compatible Python version, then load `main.py` through the official Kaggle Environments API.
 
-The smoke test checks importability without credentials, market arithmetic, fallback action shape, and the retained source hash. A four-step optional engine loader smoke using Python 3.11.15 ended with both agents `DONE` and rewards `150.0` and `150.0`. A separate step-0 check returned `BUILD_PASTURE` and hiring/purchase orders with no stderr, confirming a non-fallback planner decision. These checks cover startup behavior, not a complete game or competition result. The archive does not include data or replay assets required by disabled experimental branches.
+The smoke test checks importability without credentials, market arithmetic, fallback action shape, and the retained source hash. A four-step optional engine loader smoke using Python 3.11.15 ended with both agents `DONE` and rewards `150.0` and `150.0`. A separate step-0 check returned `BUILD_PASTURE` and hiring/purchase orders with no stderr, confirming a non-fallback planner decision. The [first-decision record](https://github.com/rhasegaw/kaggriculture-agent/blob/main/results/runtime_check.json) is included. These checks cover startup behavior, not a complete game or competition result. The archive does not include data or replay assets required by disabled experimental branches.
 
 ## 6. Limitations
 

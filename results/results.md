@@ -24,7 +24,7 @@ The structured capture is in [`official_final.json`](https://github.com/rhasegaw
 1. Mirrors the game’s crop, animal, shop, land, market, and 720-turn constants (`main.py:38-87`).
 2. Computes inventory-dependent prices and one-unit-at-a-time sale limits (`main.py:90-128`).
 3. Parses the observed farm and opponent state, maintains per-player state, and refreshes a daily plan (`main.py:325-469`, `main.py:970-1004`).
-4. Builds jobs from current tiles, plants, animals, shed stock, and available seeds (`main.py:1066-1100`).
+4. Builds jobs from current tiles, plants, animals, shed stock, and available seeds (`main.py:1066-1406`).
 5. Assigns the farmer and hired hands by urgency, production deadlines, walking distance, and market/feeding constraints (`main.py:1440-1563`, `main.py:1826-2091`).
 6. Returns the required `farmer`, `hands`, and `market` action lists through `agent(obs, config=None)` (`main.py:4075-4128`, `main.py:4207-4220`).
 
