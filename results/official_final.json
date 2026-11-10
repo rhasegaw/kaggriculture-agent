@@ -1,0 +1,30 @@
+{
+  "competition": "kaggriculture",
+  "captured_at_utc": "2026-11-10T02:51:29.2105050Z",
+  "source_urls": [
+    "https://www.kaggle.com/competitions/kaggriculture/overview",
+    "https://www.kaggle.com/competitions/kaggriculture/leaderboard",
+    "https://www.kaggle.com/api/i/competitions.LeaderboardService/GetLeaderboard",
+    "https://www.kaggle.com/api/i/competitions.LeaderboardService/GetRanksForUsers"
+  ],
+  "official_final_leaderboard": {
+    "team_id": 16644287,
+    "submission_id": 56719108,
+    "rank": 76,
+    "teams": 10148,
+    "display_score": "4856.5",
+    "medal": "SILVER"
+  },
+  "api_field_note": "Kaggle's internal response field was named privateLeaderboard; Kaggriculture's simulation rules describe a single official final leaderboard.",
+  "team": {
+    "team_name": "Ryo Hasegawa",
+    "team_size": 1,
+    "submission_count": 2,
+    "last_submission_date": "2026-09-30T21:31:17.843333300Z"
+  },
+  "source_mapping": {
+    "retained_main_sha256": "5a6668f4cd7ded9b9865f1334881e97dda0a3d2545a1fe31fd1d40aedddcefd6",
+    "final_submission_source_sha256": null,
+    "status": "unresolved"
+  }
+}

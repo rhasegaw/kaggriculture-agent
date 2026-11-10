@@ -1,0 +1,13 @@
+{
+  "artifact": "main.py",
+  "sha256": "5a6668f4cd7ded9b9865f1334881e97dda0a3d2545a1fe31fd1d40aedddcefd6",
+  "captured_date": "2026-11-09",
+  "provenance": "Retained Kaggriculture working-tree source snapshot; the original private filesystem path is intentionally omitted.",
+  "source_scope": "Single-file closed-loop planner; private replay libraries, oracle schedules, development logs, and local research data are not included.",
+  "final_submission_mapping": {
+    "submission_id": 56719108,
+    "local_source_sha256": null,
+    "status": "unresolved",
+    "note": "The official final result is verified, but the hosted submission's exact source hash was not retained in the inspected artifacts."
+  }
+}
