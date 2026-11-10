@@ -11,7 +11,7 @@ The companion portfolio page is [Kaggriculture](https://rhasegaw.github.io/work/
 - [`results/official_final.json`](https://github.com/rhasegaw/kaggriculture-agent/blob/main/results/official_final.json) — the structured official result record captured on 2026-11-09 (America/Chicago), with the corresponding UTC timestamp.
 - [`paper/paper.md`](https://github.com/rhasegaw/kaggriculture-agent/blob/main/paper/paper.md) — a dated technical report, explicitly marked as not peer-reviewed.
 - [`paper/paper.pdf`](https://github.com/rhasegaw/kaggriculture-agent/blob/main/paper/paper.pdf) — rendered report.
-- [`tests/smoke_test.py`](https://github.com/rhasegaw/kaggriculture-agent/blob/main/tests/smoke_test.py) — a standard-library-only smoke check for import, market arithmetic, fallback action shape, and source-hash integrity. Planner execution is covered only by the optional engine-loader smoke.
+- [`tests/smoke_test.py`](https://github.com/rhasegaw/kaggriculture-agent/blob/main/tests/smoke_test.py) — a standard-library-only smoke check for import, market arithmetic, fallback action shape, and source-hash integrity. A separate first-decision check verifies a non-fallback planner action; the optional engine-loader smoke checks short-run integration.
 - [`source_manifest.json`](https://github.com/rhasegaw/kaggriculture-agent/blob/main/source_manifest.json) — SHA-256 provenance for the retained source snapshot.
 - [`THIRD_PARTY_NOTICES.md`](https://github.com/rhasegaw/kaggriculture-agent/blob/main/THIRD_PARTY_NOTICES.md) — attribution and license boundaries for the optional Kaggle runtime dependency.
 
@@ -40,7 +40,7 @@ py -3 -m pip install -r requirements.txt
 python3 -m pip install -r requirements.txt
 ```
 
-Then load `main.py` through the official Kaggle Environments API or the competition submission loader. Release validation used Python 3.11.15 and a four-step self-play loader smoke: both agents finished `DONE` with rewards `150.0` and `150.0`. This validates loading and planner execution for four steps, not a competition result. A full 720-turn run is a separate evaluation exercise. The package intentionally excludes private replay tapes, oracle schedules, development logs, and research data; the corresponding experimental knobs are disabled by default in `main.py`.
+Then load `main.py` through the official Kaggle Environments API or the competition submission loader. Release validation used Python 3.11.15 and a four-step self-play loader smoke: both agents finished `DONE` with rewards `150.0` and `150.0`. This checks short-run loading, not a competition result. A separate first-decision check at step 0 returned `BUILD_PASTURE` plus hiring and purchase orders, with engine synchronization enabled and no stderr; it did not take the fallback path. A full 720-turn run is a separate evaluation exercise. The package intentionally excludes private replay tapes, oracle schedules, development logs, and research data; the corresponding experimental knobs are disabled by default in `main.py`.
 
 ## Evidence boundary
 

@@ -71,7 +71,7 @@ The package is intentionally small:
 2. Run `py -3 tests/smoke_test.py` or `python3 tests/smoke_test.py`.
 3. For optional engine evaluation, install `kaggle-environments==1.32.7` from `requirements.txt` on a compatible Python version, then load `main.py` through the official Kaggle Environments API.
 
-The smoke test checks importability without credentials, market arithmetic, fallback action shape, and the retained source hash. Planner execution is covered by the recorded four-step optional engine loader smoke using Python 3.11.15: both agents finished `DONE` with rewards `150.0` and `150.0`. This is loader validation, not a competition result. The archive does not include data or replay assets required by disabled experimental branches.
+The smoke test checks importability without credentials, market arithmetic, fallback action shape, and the retained source hash. A four-step optional engine loader smoke using Python 3.11.15 ended with both agents `DONE` and rewards `150.0` and `150.0`. A separate step-0 check returned `BUILD_PASTURE` and hiring/purchase orders with no stderr, confirming a non-fallback planner decision. These checks cover startup behavior, not a complete game or competition result. The archive does not include data or replay assets required by disabled experimental branches.
 
 ## 6. Limitations
 
